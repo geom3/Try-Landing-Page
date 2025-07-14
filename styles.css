@@ -12,14 +12,14 @@ body {
   line-height: 1.6;
 }
 
+/* Header Styles */
 .header {
   background-color: #1f2937;
-  height: 280px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  padding-bottom: 20px;
+  padding: 1rem 2rem 20px;
 }
 
 .header-nav {
@@ -34,7 +34,8 @@ body {
 }
 
 .logo-img {
-  height: 40px;
+  height: 70px;
+  width: 70px;
   margin-right: 0.5rem;
 }
 
@@ -54,6 +55,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .header-text {
@@ -83,11 +86,21 @@ body {
   font-size: 16px;
 }
 
-.header-image img {
-  max-width: 100%;
-  height: auto;
+/* Small Image on Right */
+.small-right-img {
+  flex-shrink: 0;
+  width: 400px;
+  margin-left: 2rem;
+  
 }
 
+.small-right-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Information Section */
 .info-section {
   background-color: white;
   text-align: center;
@@ -115,7 +128,7 @@ body {
 .info-item img {
   width: 100%;
   border-radius: 8px;
-  border: 2px solid blue;
+  
 }
 
 .info-item p {
@@ -124,6 +137,7 @@ body {
   color: #1f2937;
 }
 
+/* Quote Section */
 .quote-section {
   background-color: #e5e7eb;
   padding: 3rem 2rem;
@@ -144,6 +158,7 @@ body {
   text-align: right;
 }
 
+/* Call to Action Section */
 .cta-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -157,7 +172,6 @@ body {
   padding: 4rem;
   border-radius: 8px;
   height: 100px;
-  
 }
 
 .cta-text h2 {
@@ -181,6 +195,7 @@ body {
   cursor: pointer;
 }
 
+/* Footer */
 .footer {
   background-color: #1f2937;
   padding: 1rem;
